@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: hack-nerd-font-mono,FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -50,8 +50,8 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    box-shadow: inset 0 +3px #075391;
-    background-color: #0763A1;
+    box-shadow: inset 0 +3px #27A3E1;
+    background-color: rgba(39,163,225,0.5);
 }
 
 #workspaces button {
@@ -95,6 +95,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-notification,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -184,8 +185,21 @@ label:focus {
 }
 
 #custom-power {
-    box-shadow: inset -3px +3px #A05151;
-    background-color: #B06161;
+    box-shadow: inset 0 +3px #B06161;
+    background-color: rgba(176,97,97,0.5);
+}
+#custom-power:hover {
+    box-shadow: inset 0 +3px #C07171;
+    background-color: rgba(192,113,113,0.5);
+}
+
+#custom-notification {
+    box-shadow: inset 0 +3px #E4C087;
+    background-color: rgba(228,192,135,0.5);
+}
+#custom-notification:hover {
+box-shadow: inset 0 +3px #F4D097;
+background-color: rgba(244,208,151,0.5);
 }
 
 #backlight {
@@ -193,8 +207,12 @@ label:focus {
 }
 
 #network {
-    box-shadow: inset 0 +3px #024524;
-    background-color: #125534;
+    box-shadow: inset 0 +3px #125534;
+    background-color: rgba(18, 85, 52, 0.5);
+}
+#network:hover {
+    box-shadow: inset 0 +3px #226544;
+    background-color: rgba(34, 101, 68, 0.5);
 }
 
 #network.disconnected {
@@ -202,13 +220,13 @@ label:focus {
 }
 
 #pulseaudio {
-    box-shadow: inset 0 +3px #0783C1;
-    background-color: #1793D1;
+    box-shadow: inset 0 +3px #1793D1;
+    background-color: rgba(23,147,209,0.5);
 }
 
 #pulseaudio.muted {
-    box-shadow: inset 0 +3px #e52c2c;
-    background-color: #f53c3c;
+    box-shadow: inset 0 +3px #f53c3c;
+    background-color: rgba(245,60,60,0.5);
 }
 
 #wireplumber {
@@ -290,7 +308,8 @@ label:focus {
 }
 
 #keyboard-state {
-    background: #808080;
+    box-shadow: inset 0 +3px #808080;
+    background: rgba(128,128,128,0.5);
     padding: 0 0px;
     margin: 0 1px;
     min-width: 16px;
@@ -301,7 +320,8 @@ label:focus {
 }
 
 #keyboard-state > label.locked {
-    background: rgba(255, 0, 0, 0.2);
+    box-shadow: inset 0 +3px #f53c3c;
+    background-color: rgba(245,60,60,0.5);
 }
 
 #scratchpad {

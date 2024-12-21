@@ -1,8 +1,10 @@
 *
-!*/
+!/*/
 !hypr/*
 !waybar/*
-!wofi/*
+!anyrun/*
 !kitty/*
 !wlogout/*
+!fish/*
+!Thunar/*
 !/.gitignore
